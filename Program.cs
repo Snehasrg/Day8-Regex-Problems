@@ -15,7 +15,7 @@ namespace RegexPattern
                 case 1:
                     ValidateRegex.Match();
                     break;
-                    case 2:
+                case 2:
                     ValidateRegex.FindSequencewithUnderscore();
                     break;
             }
