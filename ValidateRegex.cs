@@ -56,5 +56,21 @@ namespace RegexPattern
             Console.WriteLine("The Count of given Pattern in given String " + matches.Count);
 
         }
+
+        public static void FileExtension()
+        {
+            Regex regex = new Regex(@"([^\s]+(\.(?i)(jpe?g|png|gif|bmp))$)");
+
+            Console.WriteLine("Enter filename with image file extension : ");
+            string filename = Console.ReadLine();
+            if (regex.IsMatch(filename))
+            {
+                Console.WriteLine("Valid file name");
+            }
+            else
+            {
+                Console.WriteLine("Invalid file name");
+            }
+        }
     }
 }
