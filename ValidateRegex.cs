@@ -48,6 +48,13 @@ namespace RegexPattern
             }
         }
 
-       
+        public static void CountOccurence(string inputString)
+        {
+            Regex regex = new Regex(@"fox(es)?");
+
+            MatchCollection matches = regex.Matches(inputString);
+            Console.WriteLine("The Count of given Pattern in given String " + matches.Count);
+
+        }
     }
 }
